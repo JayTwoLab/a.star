@@ -1,4 +1,4 @@
-### `A*(A star)` 알고리즘: 효율적인 최단 경로 탐색 알고리즘
+### `A* (A star)` 알고리즘: 효율적인 최단 경로 탐색 알고리즘
 
 > [English](README.md) , [Korean](README.ko.md)
 
@@ -68,8 +68,6 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
-- 상세 코드 : https://github.com/j2doll/a.star
 
 - 코드 설명
 
