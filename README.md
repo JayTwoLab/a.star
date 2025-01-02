@@ -1,5 +1,7 @@
 ### `A* (A star)` Algorithm: An Efficient Shortest Path Search Algorithm
 
+> [English](README.md) , [Korean](README.ko.md)
+
 - The `A* (A star)` algorithm is a graph search and pathfinding algorithm known for its efficiency in finding the shortest path.
 - It is commonly used in navigation systems, game AI, and robot path planning.
 - A* is similar to Dijkstra's algorithm but uses **heuristics** to make the search more efficient.
