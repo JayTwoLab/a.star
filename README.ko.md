@@ -69,8 +69,6 @@ if __name__ == "__main__":
     main()
 ```
 
-- 코드 설명
-
 <p align="center"> <img width="70%"  src="https://gist.githubusercontent.com/j2doll/36975662784b338d0b36ab12ea29fc5e/raw/dd99d47e5d9067eec4cb7129b5512d43461180cc/output%2520(1).png" /> </p>
 
 A* 알고리즘은 최적의 경로를 탐색하는 알고리즘이지만, **최적의 경로가 여러 개 존재**할 경우에도 동일한 휴리스틱과 비용 조건에서 **하나의 경로만 반환**합니다. 
