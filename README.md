@@ -43,45 +43,6 @@
 
 ### Pseudo Code
 ```python
-def a_star(graph, start, goal, heuristic):
-    open_list = [(start, 0)]  # Open list: (node, f value)
-    closed_list = set()  # Closed list
-    g_score = {start: 0}  # Cost from the start node
-    came_from = {}  # Path tracking
-
-    while open_list:
-        current, _ = min(open_list, key=lambda x: x[1])  # Select node with the lowest f value
-        if current == goal:
-            return reconstruct_path(came_from, current)  # Return shortest path
-
-        open_list = [(node, f) for node, f in open_list if node != current]
-        closed_list.add(current)
-
-        for neighbor in graph[current]:
-            if neighbor in closed_list:
-                continue
-
-            tentative_g = g_score[current] + graph[current][neighbor]
-            if neighbor not in g_score or tentative_g < g_score[neighbor]:
-                g_score[neighbor] = tentative_g
-                f_score = tentative_g + heuristic(neighbor, goal)
-                open_list.append((neighbor, f_score))
-                came_from[neighbor] = current
-
-    return None  # No path found
-
-def reconstruct_path(came_from, current):
-    path = []
-    while current in came_from:
-        path.append(current)
-        current = came_from[current]
-    path.reverse()
-    return path
-
-def heuristic(node, goal):
-    # Example: Manhattan distance
-    return abs(node[0] - goal[0]) + abs(node[1] - goal[1])
-
 def main():
     # Define graph (node: {neighbor: distance})
     graph = {
